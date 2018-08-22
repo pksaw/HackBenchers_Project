@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game Arena</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.css" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h4 class="text-center text-success mt-1">Games Arena</h4>
+        <div class="container jumbotron">
+            <div class="row" id="search_bar">
+                <div class="col-8">
+                    <div class="input-group mb-3" id="input_bar">
+                        <input type="text" class="form-control" id="input" placeholder="Search by Title" aria-label="Search by Platform" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary" type="button" id="clear_input"><i class="fas fa-times"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="score_input" placeholder="enter score" aria-label="enter score">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-sort"></i></span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr id="top_horizontal">
+            <div class=" row main_part " id="row-games">
+            </div>
+            <hr id="bottom_horizontal">
+            <div class="row" id="pagination_btn">
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <nav aria-label="Page navigation justify-content-center">
+                            <ul class="pagination">
+                                <li class="page-item" id="previous_fast_btn">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true"><i class="fas fa-fast-backward text-dark"></i></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                </li>
+                                <li> &nbsp;</li>
+                                <li class="page-item" id="previous_btn">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true"><i class="fas fa-step-backward text-dark"></i></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                </li>
+                                <li id="page_reader" class="mt-2" style="font-weight: bold;">
+                                </li>
+                                <li class="page-item" id="next_btn">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true"><i class="fas fa-step-forward text-dark"></i></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </li>
+                                <li> &nbsp;</li>
+                                <li class="page-item" id="next_fast_btn">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true"><i class="fas fa-fast-forward text-dark"></i></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+            <hr style="margin-top:-7px;">
+
+        </div>
+
+    </div>
+</body>
+
+</html>

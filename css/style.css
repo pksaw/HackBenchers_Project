@@ -1,0 +1,71 @@
+#game_platform {
+    margin-top: -10px;
+}
+
+.jumbotron {
+    height: 580px;
+}
+
+.main_part {
+    height: 450px;
+    overflow: auto;
+    margin-top: -15px;
+}
+
+#image_logo {
+    height: 115px;
+    width: 115px;
+}
+
+#top_horizontal {
+    margin-top: -5px;
+}
+
+#bottom_horizontal {
+    margin-top: 0px;
+}
+
+#pagination_btn {
+    margin-bottom: 0px;
+}
+
+#search_bar {
+    margin-top: -50px;
+}
+
+#page_reader {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#input_bar {
+    margin-left: 10px;
+}
+
+#filter {
+    margin-left: 20px;
+}
+
+@media (max-width: 576px) {
+    #search_bar {
+        margin-top: -20px;
+    }
+    #page_reader {
+        margin-left: 1px;
+        margin-right: 1px;
+        font-size: 10px;
+    }
+    #filter {
+        margin-left: 3px;
+    }
+}
+
+@media (max-width: 480px) {
+    #image_logo {
+        height: 70px;
+        width: 70px;
+    }
+    .card-title {
+        font-size: 15px;
+    }
+}
